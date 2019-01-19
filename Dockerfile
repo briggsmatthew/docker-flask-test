@@ -1,5 +1,5 @@
 FROM python
-COPY hello.py /hello.py
+COPY hello_server.py /hello_server.py
 RUN pip install flask
-ENV FLASK_APP=/hello.py
-ENTRYPOINT [ "python", "hello.py" ]
+ENV FLASK_APP=/hello_server.py
+ENTRYPOINT [ "python", "hello_server.py" ]
